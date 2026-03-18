@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 Hi, I’m **Matthew Wilson**, a server engineer and cybersecurity enthusiast. I’ve been building and maintaining Linux and Windows servers since 2022 and enjoy automating workflows, securing IT environments, and tackling challenging technical problems.
