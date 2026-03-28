@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <div class="home-grid">
+
+    <section class="posts">
+      <h2 class="post-list-heading">Posts</h2>
+
+      {% for post in site.posts %}
+      <div class="post-item">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {% if site.show_excerpts %}
+          {{ post.excerpt }}
+        {% endif %}
+      </div>
+      {% endfor %}
+    </section>
+
+    <section class="testimonials">
+	  <h2>Testimonials</h2>
+
+	  {% for t in site.data.testimonials %}
+		<div class="testimonial-card">
+		  <p class="testimonial-text">"{{ t.content }}"</p>
+		  
+		  <div class="testimonial-author">
+			<strong>{{ t.name }}</strong>
+			<span>{{ t.role }} — {{ t.company }}</span>
+		  </div>
+		</div>
+	  {% endfor %}
+	</section>
+
+  </div>
+</div>
