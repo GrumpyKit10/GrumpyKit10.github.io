@@ -3,6 +3,14 @@ layout: page
 title: Projects
 ---
 
+### Wazuh SIEM Homelab
+ This lab uses a virtual SOC environment with the Wazuh SIEM system for monitoring a Windows domain in an isolated network environment. 
+ 
+- Tech: Wazuh SIEM, Windows Server, Linux Server, VirtualBox, Powershell, TCP/IP Networking
+- [View on GitHub](https://github.com/GrumpyKit10/Wazuh-SIEM-Homelab)
+
+---
+
 ### CloudWatcher
 Personal Ubuntu server for web hosting and project development with secure remote access. 
 
